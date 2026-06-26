@@ -5,17 +5,18 @@
     "moduleResolution": "node",
 
     "lib": ["ES2020"],
-    "types": ["node"],
 
     "rootDir": "src",
     "outDir": "dist",
 
     "strict": true,
     "esModuleInterop": true,
+
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+
+    "types": ["node"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
