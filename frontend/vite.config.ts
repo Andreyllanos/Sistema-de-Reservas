@@ -5,6 +5,10 @@ export default defineConfig({
   plugins: [react()],
 
   preview: {
-    allowedHosts: true,
+    host: '0.0.0.0',
+    port: 8080,
+    allowedHosts: [
+      'sistema-de-reservas-production-72e3.up.railway.app'
+    ],
   },
 });
