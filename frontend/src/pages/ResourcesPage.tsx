@@ -6,9 +6,17 @@ import {
   getResources,
   updateResource,
 } from '../services/resourceService';
-import type { Resource } from '../types';
+import type {
+  Resource,
+  ResourceState,
+} from '../types';
 
-const initialForm = {
+const initialForm: {
+  nombre: string;
+  descripcion: string;
+  tipo: string;
+  estado: ResourceState;
+} = {
   nombre: '',
   descripcion: '',
   tipo: '',
@@ -177,7 +185,7 @@ export default function ResourcesPage() {
               onChange={(e) =>
                 setForm({
                   ...form,
-                  estado: e.target.value,
+                  estado: e.target.value as Resource['estado'],
                 })
               }
             >
