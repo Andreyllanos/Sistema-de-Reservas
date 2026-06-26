@@ -11,11 +11,12 @@
 
     "strict": true,
     "esModuleInterop": true,
-
     "skipLibCheck": true,
     "resolveJsonModule": true,
 
-    "types": ["node"]
+    "types": ["node"],
+
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
