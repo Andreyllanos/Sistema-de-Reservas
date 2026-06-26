@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://sistema-de-reservas-production-5ff3.up.railway.app/api/:path*"
+    }
+  ]
+}
